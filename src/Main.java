@@ -16,8 +16,10 @@ public class Main {
 
         File[] directoryListing = dir.listFiles(); /* creates array of all files in above directory */
         if (directoryListing != null) {
+            String str;
             for (File child : directoryListing) {
-                
+                str = child.getName();
+                System.out.println(str);
             }
         } else {
 
